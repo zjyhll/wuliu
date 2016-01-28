@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appallbackground"
+    android:orientation="vertical"
+    tools:context="com.keyhua.logistic.main.personcenter.PersonCenterActivity">
+
+    <include layout="@layout/head_otheract" />
+
+    <com.keyhua.logistic.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:drawableTop="@mipmap/ic_launcher"
+                android:gravity="center"
+                android:text="LOGO"
+                android:textColor="@color/content"
+                android:textSize="28sp" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_gx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/select_item_down"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="检查更新"
+                    android:textColor="@color/content"
+                    android:textSize="@dimen/size20" />
+
+                <TextView
+                    android:id="@+id/tv_tishi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="当前为最新版本"
+                    android:textColor="@color/content"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_fk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/select_item_down"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="意见反馈"
+                    android:textColor="@color/content"
+                    android:textSize="@dimen/size20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/right_s"
+                    android:gravity="center"
+                    android:textColor="@color/content"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_gy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/select_item_down"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="关于我们"
+                    android:textColor="@color/content"
+                    android:textSize="@dimen/size20" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@mipmap/right_s"
+                    android:gravity="center"
+                    android:textColor="@color/content"
+                    android:textSize="@dimen/size14" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/select_item_down"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="客服电话"
+                    android:textColor="@color/content"
+                    android:textSize="@dimen/size16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:text="028-86867272"
+                    android:textColor="@color/content"
+                    android:textSize="@dimen/size20" />
+
+                <TextView
+                    android:id="@+id/tv_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_ok_selector"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="立即拨打"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size20" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.keyhua.logistic.view.ReboundScrollView>
+</LinearLayout>
